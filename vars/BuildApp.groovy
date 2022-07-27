@@ -1,4 +1,4 @@
 def call()
 {
-mvn "package"
+bat label: '', script: 'mvn clean package'
 }
