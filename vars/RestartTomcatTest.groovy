@@ -1,5 +1,5 @@
 def call()
 {
-  powershell label: "", script: "start-sleep 10"
-  bat "H://ar.sample.java.war.app//copy.bat"
+  //powershell label: "", script: "start-sleep 10"
+  powershell "H:/ar.sample.java.war.app/copy.bat"
 }
