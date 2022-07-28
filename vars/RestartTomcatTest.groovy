@@ -1,4 +1,4 @@
 def call()
 {
-  bat "H:\ar.sample.java.war.app\copy.bat"
+  bat "H://ar.sample.java.war.app//copy.bat"
 }
