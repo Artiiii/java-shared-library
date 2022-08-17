@@ -6,6 +6,6 @@ remote.name = 'azurevm'
 remote.user = 'arti'
 remote.password = 'Arti123'
 remote.allowAnyHosts = true
-remote.host = powershell script: "Get-Content outpput.txt", returnStatus: true
+remote.host = powershell script: "Get-Content output.txt", returnStatus: true
 sshPut remote: remote, from: 'LoginWebApp.war', into: '/opt/tomcat/9_37/webapps'
 }
