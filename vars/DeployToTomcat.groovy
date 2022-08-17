@@ -2,8 +2,8 @@ def call(user, passwd)
 {
 remote = [:]
 remote.name = 'azurevm'
-remote.user = $user
-remote.password = $passwd
+remote.user = user
+remote.password = passwd
 remote.allowAnyHosts = true
 remote.host = powershell script: "Get-Content output.txt", returnStdout: true
 remote.host = remote.host.trim()
