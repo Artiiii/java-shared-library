@@ -3,7 +3,7 @@ remote.name = 'azurevm'
 //remote.host = '40.85.162.228'
 remote.user = 'arti'
 remote.password = 'Arti123'
-remote.allowAnyHosts =
+remote.allowAnyHosts = true
   
 def call()
 {
