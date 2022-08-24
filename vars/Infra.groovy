@@ -5,8 +5,8 @@ def call()
   set ARM_CLIENT_SECRET=$azcon_CLIENT_SECRET
   set ARM_SUBSCRIPTION_ID=$azcon_SUBSCRIPTION_ID
   set ARM_TENANT_ID=$azcon_TENANT_ID
-  'H:/Tools/terraform/terraform.exe'  -chdir=infra init -input=false
-  'H:/Tools/terraform/terraform.exe'  -chdir=infra plan -out=tfplan -input=false
-  'H:/Tools/terraform/terraform.exe'  -chdir=infra apply -input=false tfplan   
+  terraform  -chdir=infra init -input=false
+  terraform  -chdir=infra plan -out=tfplan -input=false
+  terraform  -chdir=infra apply -input=false tfplan   
   """
 }
