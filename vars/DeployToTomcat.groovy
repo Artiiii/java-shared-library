@@ -1,6 +1,7 @@
 def call(user, passwd)
 {
 ip = powershell label:'', script: 'Get-Content output.txt', returnStdout: true
+ip = ip.trim()
 remote = [:]
 remote.name = 'azurevm'
 remote.user = user
